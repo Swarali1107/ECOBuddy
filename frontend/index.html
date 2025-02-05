@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    
+    <title>Trash Attack</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .card-height {
+            min-height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+        <div class="container">
+          <a href="#" class="navbar-brand" style="position: relative;">
+            <img src="../assets/logo.png" alt="ECObuddy Logo" style="position: absolute; height: 40px; width: 40px; left: -50px; top: -3px; border-radius: 50%;">
+            ECObuddy
+        </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#recycle" class="nav-link">Recycle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Help" class="nav-link" data-bs-toggle="modal" data-bs-target="#leaderboad">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Showcase-->
+    <section style="position: relative; overflow: hidden; min-height: 600px;">
+      <video autoplay muted loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+          <source src="../assets/waste.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      <div class="container" style="position: relative;">
+          <img src="../assets/tt.png" alt="Your Image" style="position: absolute; top: 400px; left: 50%; transform: translateX(-50%); z-index: 1; height: 100px; width: 250px; border-radius: 50px;">
+      </div>
+  </section>
+  
+  
+  
+
+    <section class="bg-success text-light p-5 mb-5" style="position: relative; top: -142px;">
+      <div class="container text-center">
+          <div class="d-md-flex justify-content-center align-items-center position-relative">
+              <h1 style="font-weight: bold; position: relative;">
+                  <img src="../assets/giphy.gif" alt="Your GIF" style="position: absolute; left: calc(50% - 470px); top: -50px; height: 150px; width: 150px; border-radius: 50%;"> <!-- Adjust the URL, height, width, and top position as needed -->
+                  <span style="color: white;">Reduce, Reuse, Recycle with </span>
+                  <span class="text-success" style="font-weight: bold; color: black; background-color: yellow; position: absolute; top: 0; left: calc(50% + 400px); transform: translateX(-50%);">ECObuddy</span>
+              </h1>
+          </div>
+      </div>
+  </section>
+  
+      
+            
+    </section>
+
+    <!--Boxes-->
+    <section class="p-5" style="position: relative; top: -200px;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md">
+                    <div class="card bg-dark text-light card-height">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Community Waste Competition</h3>
+                            <p class="card-text">
+                                Join our community in fun competitions. Together, we create a sense of community and environmental responsibility.
+                            </p>
+                            <a href="event.html" class="btn btn-success">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-success text-light card-height">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-trash"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Illegal Dumping Reporting</h3>
+                            <p class="card-text">
+                                Report instances of illegal dumping with geotagging and photo uploads for swift action.
+                            </p>
+                            <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#enroll">Report</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light card-height">
+                      <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-people"></i> <!-- You can use an appropriate icon for NGOs -->
+                        </div>
+                        <h3 class="card-title mb-3">Waste Management Buddies</h3>
+                        <p class="card-text">
+                            Learn about NGOs dedicated to waste management and collection, and their initiatives to promote sustainability.
+                        </p>
+                        <!-- Replace "#" with the URLs of the official websites of the NGOs -->
+                        <a href="https://swachcoop.com/" class="btn btn-success" target="https://swachcoop.com/">SWACH.com</a>
+                        <a href="https://saahas.org/" class="btn btn-success" target="https://saahas.org/">Saahas.org</a>
+                        <!-- Add more buttons for additional NGOs as needed -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Report Illegal Dumping</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Name</label>
+                            <input type="type" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Surname</label>
+                            <input type="text" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Number</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="078...">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputPicture" class="form-label">Upload Picture</label>
+                            <input type="file" class="form-control" id="inputPicture" name="picture">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Description</label>
+                            <textarea class="form-control" id="inputAddress2" name="description" placeholder="Describe your problem"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+</body>
+</html>

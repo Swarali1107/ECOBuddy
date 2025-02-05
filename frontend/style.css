@@ -1,0 +1,30 @@
+@media(min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	background: #9ecae0;
+}
+
+
+
+img{
+  height: 30px;
+  width: 30px;
+  position: relative;
+  right: 170px;
+  top:30px;
+}

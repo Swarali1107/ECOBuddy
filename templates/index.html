@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBuddy - Waste Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    
+</head>
+<body>
+    <h2>EcoBuddy - Waste Management</h2>
+    <input type="file" id="imageUpload">
+    <button onclick="uploadImage()">Upload & Detect</button>
+
+    <!-- Display Original and Processed Images -->
+    <div id="originalImage"></div>
+    <div id="processedImage"></div>
+
+    <!-- Display Detection Results -->
+    <div id="results"></div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
